@@ -6,6 +6,10 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily : {
+      englishText: ["var(--English)"],
+      text: ["var(--text)"]
+    },
     extend: {
       colors: {
         background: "var(--background)",
