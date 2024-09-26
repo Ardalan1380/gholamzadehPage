@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import instagram from "@/app/public/instagram.svg";
+import instagram from "@/public/instagram.svg";
 import Image from 'next/image';
 import { FaAngleDown } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
@@ -25,10 +25,10 @@ function Instagram() {
     };
 
     return (
-        <div className="w-[396px] mt-[7rem] flex flex-col min-h-[297px] border-2 border-[#707070] rounded-xl">
+        <div className="w-[370px] mt-[7rem] flex flex-col min-h-[297px] border-2 border-[#707070] rounded-xl">
             <div className="flex mx-auto mt-2">
-                <Image src={instagram} width={400} height={400} alt="phone" className="w-[20px] ml-1 " />
-                <p className="text-center text-white">
+                <Image src={instagram} width={400} height={400} alt="phone" className="w-[20px] ml-2 " />
+                <p className="text-center text-white font-peyda">
                     اینستاگرام 
                 </p>
             </div>
@@ -49,7 +49,7 @@ function Instagram() {
                                         <FaChevronLeft className="text-[#C38065]" />
                                     )}
                                 </div>
-                                <div className="text-[#C8C8C8] mr-1">
+                                <div className="text-[#C8C8C8] mr-1 font-peyda">
                                     {item.title}
                                 </div>
                             </div>
@@ -60,7 +60,7 @@ function Instagram() {
                             <div className="flex justify-center w-full">
                                 <div className="w-[341px] mx-auto border border-[#707070] bg-[#282828] text-[#C8C8C8] p-4 mt-2 rounded-xl">
                                     <Link className="text-center" href={`https://instagram.com/${item.test}`}>
-                                    <p className="text-center">
+                                    <p className="text-center font-peyda">
                                     {item.test}
                                     </p>
                                     </Link>

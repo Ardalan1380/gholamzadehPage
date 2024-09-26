@@ -2,7 +2,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
 
-import { text , englishText } from "@/utils/custome_fonts";
+import { text , peyda , englishText } from "@/utils/custome_fonts";
 
 
 
@@ -20,7 +20,7 @@ import { text , englishText } from "@/utils/custome_fonts";
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${text.variable} ${englishText.variable}`}>
+      <body className={`${text.variable} ${englishText.variable}  `}>
         {children}
       </body>
     </html>

@@ -1,0 +1,11 @@
+{
+  "platform": "next",
+  "app":"gholamzadehfront",
+    "next": {
+        "modifyConfig": false
+    },
+  "node": {
+    "version": "20"
+  }
+
+}

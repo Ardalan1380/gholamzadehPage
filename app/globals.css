@@ -10,14 +10,17 @@
 
 html {
   scroll-behavior: smooth;
+  background-image: linear-gradient(to bottom , #101010  , #545454 );
+
  }
 
 body {
   color: var(--foreground);
+
   /* background: var(--background);
    */
-   background-image: linear-gradient(to top, #1D1D1D , #5B5B5B);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  
 }
 
 

@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     fontFamily : {
       englishText: ["var(--English)"],
-      text: ["var(--text)"]
+      text: ["var(--text)"],
+      peyda : ["var(--regular)"]
     },
     extend: {
       colors: {

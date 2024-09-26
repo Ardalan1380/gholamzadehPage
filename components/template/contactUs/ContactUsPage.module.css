@@ -1,5 +1,8 @@
+
+
+
 .side {
-    background : url("../../public/side.png");
+    background : url("../../../public/side.png");
     width: 65px;
     height: 174px;
     background-repeat: no-repeat;
@@ -9,13 +12,12 @@
     margin: 20px auto;
     align-items: center;
 }
-
 .side2 {
     display: flex;
     justify-content: center;
     margin:20px auto;
     align-items: center;
-    background : url("../../public/side2.png");
+    background : url("../../../public/side2.png");
     width: 65px;
     height: 174px;
     background-repeat: no-repeat;
