@@ -1,0 +1,50 @@
+.container {
+    background: url("../../../public/aboutUs/xtrim.png");
+    height: 547px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:1400px) {
+    .container {
+    background-size:contain;
+    height: 500px;
+    align-items: start;
+    }
+}
+
+
+
+@media (max-width:800px) {
+    .container {
+    background-size:contain;
+    height: 250px;
+    align-items: center;
+    }
+    .container div h1 {
+        font-size: 30px;
+    }
+    .container div p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+    align-items: center;
+    height: 170px;
+    }
+    .container div {
+        margin-bottom: 30px;
+    }
+    .container div h1 {
+        font-size: 20px;
+       
+    }
+}
+

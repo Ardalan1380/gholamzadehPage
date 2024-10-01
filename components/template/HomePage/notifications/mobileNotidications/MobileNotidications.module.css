@@ -1,0 +1,22 @@
+@media (max-width:700px) {
+    .topSideContainer {
+        width: 390px;
+    }
+    .topSideContainer div {
+        width: 390px;
+    }
+    .card div {
+        width: 120px;
+    }
+    .card div p {
+        font-size: 13px;
+    }
+
+    .card div:nth-child(1) img {
+        height: 30px;
+    }
+    .downSide {
+        width: 380px;
+    }
+}
+

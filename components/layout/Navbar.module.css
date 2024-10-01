@@ -1,0 +1,9 @@
+@media (max-width:800px) {
+    .mainContainer {
+        display: none;
+    }
+    .Mnav {
+        display: flex;
+        flex-direction: column;
+    }
+}

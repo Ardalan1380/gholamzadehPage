@@ -1,0 +1,64 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../public/Products/Xtrim.png"); /* Replace with your background image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+.container::before {
+content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  backdrop-filter: blur(10px); 
+  z-index: 1;
+}
+
+.child {
+    position: relative;
+    z-index: 2; 
+    color: white; 
+    background-color: #404040;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    border: 3px solid #959595;
+    border-radius: 50px;
+}
+
+
+.child img {
+    width: 600px;
+    background-size: cover;
+    height: 650px;
+}
+
+@media (max-width:1200px) {
+    .child {
+        width: 800px;
+    }
+    .child img {
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media (max-width:800px) {
+    .child img {
+        display: none;
+    }
+}

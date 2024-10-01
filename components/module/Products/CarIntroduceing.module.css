@@ -1,0 +1,120 @@
+@media (max-width:1531px) {
+    .container {
+        width: 1000px;
+    }
+    .container div div {
+        width: 500px;
+    }
+
+    .container div  img {
+        width: 500px;
+    }
+    .container div {
+        justify-content: center;
+    }
+    .container div div h4 {
+        margin-right: 20px;
+    }
+    .container div div p {
+        margin-right: 30px;
+    }
+}
+
+
+
+@media (max-width:1000px) {
+    .container {
+        width: 500px;
+    }
+    .container div div {
+        width: 330px;
+        height: 300px;
+    }
+    .container div div div button {
+        width: 110px;
+        height: 30px;
+        font-size: 11px;
+        margin-top: 1.5rem;
+    }
+
+    .container div div div  {
+        width: 120px;
+        height: 13px;
+    }
+
+
+    .container div img {
+        width: 330px;
+        height: 300px;
+    }
+    .container div {
+        justify-content: center;
+    }
+    .container div div h4 {
+        margin-right: 20px;
+    }
+    .container div div p {
+        margin-right: 30px;
+        font-size: 13px;
+        width: 300px;
+        height: 100px;
+    }
+}
+
+
+
+@media (max-width:660px) {
+    .container {
+        width: 385px;
+        margin-top: 5px;
+    }
+    
+    .container div div {
+        justify-content: stretch;
+        padding: 10px;
+        width: 180px;
+        height: 150px;
+
+    }
+    
+    .container div div div button {
+        width: 80px;
+        height: 30px;
+        font-size: 11px;
+       
+    }
+
+    .container div div div  {
+        width: 120px;
+        height: 13px;
+    }
+
+
+    .container div img {
+        width: 180px;
+        height: 150px;
+    }
+    .container div {
+        justify-content: center;
+        
+    }
+    .container div div h4 {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    .container div div p {
+        margin-right: 10px;
+        margin-top: 1px;
+        font-size: 9px;
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media (max-width:450px) {
+    .container {
+        width: 385px;
+        margin-top: -35px;
+    }
+    
+}

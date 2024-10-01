@@ -30,7 +30,6 @@ function Address() {
     ];
 
     const handleSetIndex = (id) => {
-        // If clicked item is already open, close it by setting index to null
         setIndex(index === id ? null : id);
     };
 

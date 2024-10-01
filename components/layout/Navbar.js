@@ -1,8 +1,11 @@
 import React from 'react'
+import styles from "./Navbar.module.css";
+import { CiSearch } from "react-icons/ci";
 
 function Navbar() {
   return (
-    <div className="h-[90px] w-full  bg-[#1C1C1C] flex justify-between">
+    <>
+    <div className={`h-[90px] w-full bg-[#1C1C1C] flex justify-between ${styles.mainContainer}`}>
         <div className="w-[100px] items-center justify-center bg-[#3E3E3E] h-full flex flex-col">
             <p className="text-[19px] text-white">هلدیـــنگ</p>
             <p className="text-[25px] text-white font-semibold">غلام زاده</p>
@@ -23,6 +26,19 @@ function Navbar() {
             </button>
         </div>
     </div>
+
+    <div className={`hidden w-full min-h-[75px] ${styles.Mnav}`}>
+        <div className="w-full bg-[#343434] h-[35px] py-1">
+        <p className="text-center text-white text-[14px] pb-2">هلدینگ غلام زاده | فراتر از محدودیت</p>
+        <div className="bg-[#5D5D5D] h-[74px] w-full min-h-[55px] p-4 flex justify-center items-center mx-auto">
+        <label for="search" className="w-full bg-[#F3F3F3] rounded-lg border-none outline-none flex justify-center items-center" >
+            <CiSearch className="text-[19px] w-[30px] h-[40px] " />
+            <input id="search" type="text" className="w-full bg-[#F3F3F3] rounded-lg border-none outline-none p-3" placeholder="جستجوی پیشرفته" />
+        </label>
+        </div>
+        </div>
+    </div>
+    </>
   )
 }
 

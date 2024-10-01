@@ -8,6 +8,7 @@ import AboutUs from "../components/module/AboutUs";
 import { useRouter } from "next/navigation";
 import Navbar from "@/components/layout/Navbar";
 import HomePage from "@/components/template/HomePage/HomePage";
+import BottomNav from "@/components/layout/BottomNav";
 
 export default function Home() {
 //   const router = useRouter()
@@ -18,7 +19,7 @@ export default function Home() {
     <div>
       <Navbar />
       <HomePage />
-      
+      {/* <BottomNav /> */}
     </div>
   )
 }

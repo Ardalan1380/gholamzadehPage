@@ -1,0 +1,17 @@
+@media (max-width:1500px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+
+@media (max-width:1200px) {
+    .container {
+        width: 95%;
+        padding: 1px;
+    }
+    .main {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+}
