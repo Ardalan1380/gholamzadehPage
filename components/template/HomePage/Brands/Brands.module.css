@@ -1,6 +1,7 @@
 @media (max-width:800px) {
     .brandDiv {
-        height: 75px;       
+        height: 75px;    
+        width: 80%;   
     }
     .mainContainer {
         min-height: fit-content;

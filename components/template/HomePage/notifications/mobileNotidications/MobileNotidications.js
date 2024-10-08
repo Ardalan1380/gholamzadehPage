@@ -77,11 +77,11 @@ function MobileNotidications() {
             infinite={true}
             arrows={false}>
 
-    <div className="w-full min-h-[650px] bg-[#111111] flex justify-center mb-5 mx-auto items-center">
-        <div className={`w-[400px] bg-[#474747] h-[450px] my-9 rounded-[40px] flex flex-col justify-start items-center ${styles.downSide}`}>
+    <div className="w-full min-h-[550px] py-5 bg-[#111111] flex justify-center mx-auto items-start">
+        <div className={`w-[400px] bg-[#474747] h-[450px]  rounded-[40px] flex flex-col justify-start items-center ${styles.downSide}`}>
             <p className={`text-[#EBEBEB] text-[20px] my-[30px]`}>زمان باقی مانده تا شروع ثبت نام</p>
             <Image src={tiggo8} width={400} height={400} alt="tiggo" />
-            <div className={`mt-5 flex justify-center`}>
+            <div className={` flex justify-center`}>
                     <div className="flex flex-col">
                     <p className="bg-[#313131] w-fit px-5 py-3 text-[30px] font-semibold rounded-full">01</p>
                     <p className="text-center text-[17px]">روز</p>
@@ -101,8 +101,8 @@ function MobileNotidications() {
                 
     </div>  
 
-    <div className="w-full min-h-[650px] bg-[#111111] flex justify-center mb-5 mx-auto items-center">
-        <div className={`w-[400px] bg-[#474747] h-[450px] my-9 rounded-[40px] flex flex-col justify-start items-center  ${styles.downSide}`}>
+    <div className="w-full min-h-[550px] bg-[#111111] flex justify-center mx-auto items-start">
+        <div className={`w-[400px] bg-[#474747] h-[450px] rounded-[40px] flex flex-col justify-start items-center  ${styles.downSide}`}>
             <p className={`text-[#EBEBEB] text-[20px] my-[30px]`}>زمان باقی مانده تا شروع ثبت نام</p>
             <Image src={xtrimText} width={400} height={400} alt="tiggo" className="w-[200px] mb-5 " />
             <div className={`mt-5 flex justify-center`}>

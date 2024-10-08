@@ -1,6 +1,36 @@
 @media (max-width:800px) {
     .container {
-        display: flex;
-             
+        display: flex;  
     }
+}
+
+@media (max-width:530px) {
+    .main {
+        width: 380px;
+        height: 55px;
+        padding: 2px;
+    }
+    
+
+    .main div p {
+        font-size: 10px;
+    }
+
+    .Home {
+        width: 70px;
+        height: 70px;
+        
+    }
+
+    .main div img {
+        width: 34px;
+        height: 24px;
+    }
+
+
+    .Home img {
+        width: 20px;
+        height: 20px;
+    }
+    
 }

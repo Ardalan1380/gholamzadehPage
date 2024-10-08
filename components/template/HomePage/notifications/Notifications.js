@@ -11,7 +11,7 @@ import styles from "./Notification.module.css"
 
 function Notifications() {
   return (
-    <div className="bg-gradient-to-r from-[#222222] to-[#6B6B6B] w-full min-h-[700px] flex justify-around items-center">
+    <div className="bg-gradient-to-r from-[#222222] to-[#6B6B6B] w-full min-h-[700px] flex justify-around items-center ">
 
             <div className={`w-[404px] h-[400px] bg-[#474747] flex flex-col items-center justify-start mx-auto rounded-xl ${styles.asideCartR}`}>
                 <p className="text-[#E9E9E9] mt-[20px] ">زمان باقی مانده تا شروع ثبت نام</p>

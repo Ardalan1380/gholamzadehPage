@@ -52,7 +52,7 @@ function ContactUs() {
     }
   }
   return (
-    <div className="flex flex-col justify-between mx-auto w-[390px] min-h-[800px] mt-[130px]">
+    <div className="flex flex-col justify-between mx-auto w-[390px] min-h-[800px] mt-[180px]">
       
       <ContactUsPage onLinkClick={handleScroll} />
 

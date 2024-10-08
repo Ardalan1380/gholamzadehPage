@@ -30,7 +30,7 @@ function Instagram() {
     <div className={`w-[1500px] mt-[5rem] min-h-[297px] my-[3rem] flex justify-center flex-col border-2 mx-auto bg-[#404040] border-[#707070] rounded-[23px] p-5 ${styles.container}`}>
     <div className="flex mx-auto mt-2">
         <Image src={instagram} width={400} height={400} alt="phone" className="w-[20px] ml-2 " />
-        <p className="text-center text-white font-peyda">
+        <p className="text-center text-white ">
             اینستاگرام 
         </p>
     </div>
@@ -51,7 +51,7 @@ function Instagram() {
                                 <FaChevronLeft className="text-[#C38065]" />
                             )}
                         </div>
-                        <div className="text-[#C8C8C8] mr-1 font-peyda">
+                        <div className="text-[#C8C8C8] mr-1 ">
                             {item.title}
                         </div>
                     </div>
@@ -62,7 +62,7 @@ function Instagram() {
                     <div className="flex justify-center w-full">
                         <div className="w-[90%] mx-auto  border border-[#707070] bg-[#282828] text-[#C8C8C8] p-4 mt-2 rounded-xl">
                             <Link className="text-center" href={`https://instagram.com/${item.test}`}>
-                            <p className="text-center font-peyda">
+                            <p className="text-center ">
                             {item.test}
                             </p>
                             </Link>

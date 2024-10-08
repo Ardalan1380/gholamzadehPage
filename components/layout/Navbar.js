@@ -1,8 +1,11 @@
+"use client"
 import React from 'react'
 import styles from "./Navbar.module.css";
 import { CiSearch } from "react-icons/ci";
+import { useRouter } from 'next/navigation';
 
 function Navbar() {
+    const router = useRouter()
   return (
     <>
     <div className={`h-[90px] w-full bg-[#1C1C1C] flex justify-between ${styles.mainContainer}`}>
@@ -21,7 +24,7 @@ function Navbar() {
             </ul> 
         </div>
         <div className="flex justify-start w-[120px] items-center text-white p-2">
-            <button className="bg-[#3E3E3E] p-1.5 text-[13px] rounded-lg ">
+            <button className="bg-[#3E3E3E] p-1.5 text-[13px] rounded-lg " onClick={() => router.push("/signIn")}>
                 ورود/ثبت نام
             </button>
         </div>

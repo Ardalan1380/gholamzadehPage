@@ -25,18 +25,18 @@ const text = localFont ({
 })
 
 
-const peyda = localFont ({
-    src : [
-        {
-            path:"../assets/fonts/PEYDANOEN_REGULAR.ttf",
-            weight: "600",
-            style: "regular"
-        },
+// const peyda = localFont ({
+//     src : [
+//         {
+//             path:"../assets/fonts/PEYDANOEN_REGULAR.ttf",
+//             weight: "600",
+//             style: "regular"
+//         },
         
-    ],
-    variable: "--regular"
-})
+//     ],
+//     variable: "--regular"
+// })
 
 
 
-export {englishText , peyda , text}
+export {englishText  , text}

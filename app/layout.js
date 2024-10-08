@@ -1,10 +1,7 @@
 
 import "./globals.css";
 import localFont from "next/font/local";
-
-import { text , peyda , englishText } from "@/utils/custome_fonts";
-
-
+import { text  , englishText } from "@/utils/custome_fonts";
 
 // const geistMono = localFont({
 //   src: "./fonts/Dalal_MRT.ttf",

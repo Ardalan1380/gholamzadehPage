@@ -36,7 +36,7 @@ function Address() {
     <div className={`w-[1500px] mt-[5rem] min-h-[297px] my-[3rem] flex justify-center flex-col border-2 mx-auto bg-[#404040] border-[#707070] rounded-[23px] p-5 ${styles.container}`}>
     <div className="flex mx-auto mt-2">
         <Image src={location} width={400} height={400} alt="phone" className="w-[20px] ml-2 " />
-        <p className="text-center text-white font-peyda">آدرس نمایندگی ها</p>
+        <p className="text-center text-white">آدرس نمایندگی ها</p>
     </div>
 
     <div className={`grid grid-cols-2 mx-auto mt-5 w-full p-5 ${styles.main}`}>
@@ -55,7 +55,7 @@ function Address() {
                                 <FaChevronLeft className="text-[#C38065]" />
                             )}
                         </div>
-                        <div className="text-[#C8C8C8] mr-1 font-peyda">
+                        <div className="text-[#C8C8C8] mr-1">
                             {item.title}
                         </div>
                     </div>
@@ -65,10 +65,10 @@ function Address() {
                 {index === item.id && (
 
                     <div className="flex  mx-auto justify-center w-full">
-                        <div className="w-[90%] border flex flex-col mx-auto border-[#707070] bg-[#282828] text-[#C8C8C8] p-4 mt-2 rounded-xl font-peyda">
+                        <div className="w-[90%] border flex flex-col mx-auto border-[#707070] bg-[#282828] text-[#C8C8C8] p-4 mt-2 rounded-xl">
                             {item.address}
                             <div className="flex justify-center mx-auto my-2">
-                        <button className="p-1 rounded-lg text-[16px] font-semibold font-peyda text-[#C8C8C8] bg-[#C38065]" onClick={() => showInMapClicked(item.location[0] , item.location[1])}>
+                        <button className="p-1 rounded-lg text-[16px] font-semibold text-[#C8C8C8] bg-[#C38065]" onClick={() => showInMapClicked(item.location[0] , item.location[1])}>
                         بازدید بر روی نقشه
                     </button>
 

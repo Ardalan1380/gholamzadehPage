@@ -11,15 +11,15 @@ import HomePage from "@/components/template/HomePage/HomePage";
 import BottomNav from "@/components/layout/BottomNav";
 
 export default function Home() {
-//   const router = useRouter()
-// useEffect(() => {
-//     router.push("/contactUs")
-// },[])
+  const router = useRouter()
+useEffect(() => {
+    router.push("/contactUs")
+},[])
   return(
     <div>
-      <Navbar />
+      {/* <Navbar />
       <HomePage />
-      {/* <BottomNav /> */}
+      <BottomNav /> */}
     </div>
   )
 }

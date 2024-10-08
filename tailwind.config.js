@@ -9,7 +9,7 @@ module.exports = {
     fontFamily : {
       englishText: ["var(--English)"],
       text: ["var(--text)"],
-      peyda : ["var(--regular)"]
+      // peyda : ["var(--regular)"]
     },
     extend: {
       colors: {

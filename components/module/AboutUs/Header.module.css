@@ -1,4 +1,4 @@
-.container {
+/* .container {
     background: url("../../../public/aboutUs/xtrim.png");
     height: 547px;
     width: 100%;
@@ -47,4 +47,33 @@
        
     }
 }
+ */
 
+ @media (max-width:880px) {
+    .images {
+      height: 215px;
+      margin-top: 30px;
+    }
+    .Container {
+      min-height: 300px;
+    }
+    .text {
+        margin-top: 70px;
+    }
+    .text h1 {
+        font-size: 19px;
+    }
+
+    .text p {
+        font-size: 12px;
+    }
+    
+  }
+  
+  @media (max-width:500px) {
+    
+    .images {
+        height: 145px;
+    }
+  }
+  

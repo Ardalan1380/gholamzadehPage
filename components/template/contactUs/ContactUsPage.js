@@ -9,10 +9,20 @@ import car from "@/public/car.png"
 import phone from "@/public/phone.svg"
 import Image from 'next/image'
 import styles from "./ContactUsPage.module.css"
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
+import { PiNotepadLight } from "react-icons/pi";
+import { IoEyeSharp } from "react-icons/io5";
+
 
 function ContactUsPage({onLinkClick}) {
     const router = useRouter();
+    const LoginHandler = () => {
+        router.push('/PreRegistration')
+    }
+
+    const showHanler = () => {
+        router.push("/ShowingPreRegistration")
+    }
   return (
     <div className={`w-[390px] mt-[10] flex justify-between items-center ${styles.body}`}>
 
@@ -20,7 +30,7 @@ function ContactUsPage({onLinkClick}) {
         <div className={styles.side} onClick={() => onLinkClick('address')}>
             <div className="flex flex-col">
         <Image src={location} width={500} height={500} alt="side" className="w-[28px] h-[38px] relative" />
-            <p className="text-[#C38065] text-[14px] font-peyda ">آدرس ها</p>
+            <p className="text-[#C38065] text-[14px] ">آدرس ها</p>
             </div>
         {/* <Image src={side2} width={500} height={500} alt="side" className="w-[55px] h-[154px] relative" /> */}
         {/* <Image src={location} width={500} height={500} alt="side" className="w-[55px] h-[154px] relative" /> */}
@@ -29,7 +39,7 @@ function ContactUsPage({onLinkClick}) {
 
         <div className="flex flex-col mx-auto justify-center">
         <Image src={googleMap} width={500} height={500} alt="side" className="w-[28px] mr-1 h-[38px] relative" />
-            <p className="text-[#C38065] text-center text-[14px] font-peyda">گوگل مپ </p>
+            <p className="text-[#C38065] text-center text-[14px]">گوگل مپ </p>
             </div>
         {/* <Image src={side2} width={500} height={500} alt="side" className="w-[55px] h-[154px] relative" /> */}
         {/* <Image src={location} width={500} height={500} alt="side" className="w-[55px] h-[154px] relative" /> */}
@@ -41,7 +51,7 @@ function ContactUsPage({onLinkClick}) {
         {/* <Image src={location} width={500} height={500} alt="side" className="w-[55px] h-[154px] relative" /> */}
         <div className="flex flex-col" onClick={() => router.push("https://gholamzadeh.com") }>
         <Image src={website} width={500} height={500} alt="side" className="w-[38px] h-[38px] relative" />
-            <p className="text-[#C38065] text-[14px] font-peyda">وبسایت</p>
+            <p className="text-[#C38065] text-[14px]">وبسایت</p>
             </div>
         </div>
         {/* <Image src={side} width={500} height={500} alt="side" className="w-[55px] h-[154px]" />
@@ -52,7 +62,7 @@ function ContactUsPage({onLinkClick}) {
         
         <div className='w-[390px] flex flex-col mt-[-200px] min-h-[100px]'>
             <div className="flex justify-center mx-auto">
-                <p className="text-[#E8E8E8] font-peyda">
+                <p className="text-[#E8E8E8]">
                     پیج اصلی گروه خودرویی
                 </p>
                 <span className="text-[#E8E8E8] mr-1 font-myFont2 font-semibold">غلام زاده </span>
@@ -65,14 +75,14 @@ function ContactUsPage({onLinkClick}) {
 
                 <div className="my-6">
                     <p className="text-[#C38065] text-center text-[35px] font-medium">۸</p>
-                    <p className="text-[#C8C8C8] text-center font-peyda mt-[-3gpx] text-[13px]">نمایندگی فعال</p>
+                    <p className="text-[#C8C8C8] text-center mt-[-3gpx] text-[13px]">نمایندگی فعال</p>
                 </div>
 
                 <div className="my-6">
-                    <p className="text-[#C38065] text-[22px] font-medium font-peyda text-center">
+                    <p className="text-[#C38065] text-[22px] font-medium text-center">
                     چهل سال
                     </p>
-                    <p className="text-[#C8C8C8] text-center mt-[-1px] font-peyda text-[13px]">سابقه کار</p>
+                    <p className="text-[#C8C8C8] text-center mt-[-1px] text-[13px]">سابقه کار</p>
                 </div>
 
                 <div className="my-6">
@@ -82,6 +92,20 @@ function ContactUsPage({onLinkClick}) {
 
                     <div className="mt-6">
                 <p className="text-[#C8C8C8] text-center text-[28px] mt-[10px]  font-text">فراتر از محدودیت</p>
+                    </div>
+
+                    <div className={`mt-9 flex justify-center items-center`}>
+                        <button className={`text-center text-[#C8C8C8] text-[17px] flex font-semibold bg-[#353434] p-2 rounded-2xl`} onClick={LoginHandler}>
+                            <PiNotepadLight className={`w-[30px] ml-2 h-[30px]`} />
+                            پیش ثبت نام خودرو
+                        </button>
+                    </div>
+
+                    <div className={`mt-9 flex justify-center items-center`}>
+                        <button className={`text-center text-[#C8C8C8] text-[17px] flex font-semibold bg-[#353434] p-2 rounded-2xl`} onClick={showHanler}>
+                            <IoEyeSharp className={`w-[30px] ml-2 h-[30px]`} />
+                            نمایش پیش ثبت نام خودرو
+                        </button>
                     </div>
 
                 {/* <div className="flex justify-center mx-auto min-h-[100px] items-end">
@@ -97,7 +121,7 @@ function ContactUsPage({onLinkClick}) {
         <div className={styles.side2} onClick={() => onLinkClick('callUs')}>
         <div className="flex flex-col mr-[10px]">
         <Image src={phone} width={500} height={500} alt="side" className="w-[38px] h-[38px] " />
-            <p className="text-[#C38065] text-center mt-1 text-[14px] font-peyda">تماس</p>
+            <p className="text-[#C38065] text-center mt-1 text-[14px]">تماس</p>
             </div>
         {/* <Image src={side2} width={500} height={500} alt="side" className="w-[55px] h-[154px] " /> */}
 
@@ -107,7 +131,7 @@ function ContactUsPage({onLinkClick}) {
         {/* <Image src={location} width={500} height={500} alt="side" className="w-[55px] h-[154px] " /> */}
         <div className="flex flex-col mr-[3px]">
         <Image src={instagram} width={500} height={500} alt="side" className="w-[38px] h-[38px] mr-1 " />
-            <p className="text-[#C38065] text-center mt-2 text-[14px] font-peyda">اینستاگرام</p>
+            <p className="text-[#C38065] text-center mt-2 text-[14px]">اینستاگرام</p>
             </div>
         </div>
         <div className={styles.side2}  onClick={() => onLinkClick('aboutUs')}>
@@ -115,7 +139,7 @@ function ContactUsPage({onLinkClick}) {
         {/* <Image src={location} width={500} height={500} alt="side" className="w-[55px] h-[154px] relative" /> */}
         <div className="flex flex-col mr-[10px]">
         <Image src={Page} width={500} height={500} alt="side" className="w-[38px] h-[38px] " />
-            <p className="text-[#C38065] text-center mt-2 text-[14px] font-peyda">درباره ما</p>
+            <p className="text-[#C38065] text-center mt-2 text-[14px]">درباره ما</p>
             </div>
         </div>
 

@@ -1,0 +1,9 @@
+html {
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom , #252525  , #444444 );
+}
+
+.customModal {
+    width: 350px;
+    min-height:200px ;
+}

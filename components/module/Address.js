@@ -37,7 +37,7 @@ function Address() {
         <div className="w-[370px] mt-[7rem] flex flex-col min-h-[297px] border-2 border-[#707070] rounded-xl">
             <div className="flex mx-auto mt-2">
                 <Image src={location} width={400} height={400} alt="phone" className="w-[20px] ml-2 " />
-                <p className="text-center text-white font-peyda">آدرس نمایندگی ها</p>
+                <p className="text-center text-white ">آدرس نمایندگی ها</p>
             </div>
 
             <div className="flex flex-col justify-center items-center p-2 rounded-xl h-auto">
@@ -56,7 +56,7 @@ function Address() {
                                         <FaChevronLeft className="text-[#C38065]" />
                                     )}
                                 </div>
-                                <div className="text-[#C8C8C8] mr-1 font-peyda">
+                                <div className="text-[#C8C8C8] mr-1 ">
                                     {item.title}
                                 </div>
                             </div>
@@ -66,10 +66,10 @@ function Address() {
                         {index === item.id && (
 
                             <div className="flex  mx-auto justify-center w-full">
-                                <div className="w-[341px] border flex flex-col mx-auto border-[#707070] bg-[#282828] text-[#C8C8C8] p-4 mt-2 rounded-xl font-peyda">
+                                <div className="w-[341px] border flex flex-col mx-auto border-[#707070] bg-[#282828] text-[#C8C8C8] p-4 mt-2 rounded-xl ">
                                     {item.address}
                                     <div className="flex justify-center mx-auto my-2">
-                                <button className="p-1 rounded-lg text-[16px] font-semibold font-peyda text-[#C8C8C8] bg-[#C38065]" onClick={() => showInMapClicked(item.location[0] , item.location[1])}>
+                                <button className="p-1 rounded-lg text-[16px] font-semibold  text-[#C8C8C8] bg-[#C38065]" onClick={() => showInMapClicked(item.location[0] , item.location[1])}>
                                 بازدید بر روی نقشه
                             </button>
 
