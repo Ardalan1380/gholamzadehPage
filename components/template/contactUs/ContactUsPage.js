@@ -10,18 +10,30 @@ import phone from "@/public/phone.svg"
 import Image from 'next/image'
 import styles from "./ContactUsPage.module.css"
 import { useRouter } from 'next/navigation';
-import { PiNotepadLight } from "react-icons/pi";
+import { PiKeyLight, PiNotepadLight } from "react-icons/pi";
 import { IoEyeSharp } from "react-icons/io5";
+import Cookies from 'js-cookie'
 
 
 function ContactUsPage({onLinkClick}) {
     const router = useRouter();
+    const token = Cookies.get("tokenG");
     const LoginHandler = () => {
-        router.push('/PreRegistration')
+        if(token) {
+            router.push('/PreRegistration');
+        }else {
+            localStorage.setItem('myRoute' , "/PreRegistration")
+            router.push('/login');
+        }
     }
 
     const showHanler = () => {
-        router.push("/ShowingPreRegistration")
+        if(token) {
+            router.push("/ShowingPreRegistration")
+        }else {
+            localStorage.setItem('myRoute' , "/ShowingPreRegistration")
+            router.push('/login')
+        }
     }
   return (
     <div className={`w-[390px] mt-[10] flex justify-between items-center ${styles.body}`}>
@@ -60,7 +72,7 @@ function ContactUsPage({onLinkClick}) {
         </div>  
         
         
-        <div className='w-[390px] flex flex-col mt-[-200px] min-h-[100px]'>
+        <div className='w-[390px] flex flex-col mt-[-150px] min-h-[100px]'>
             <div className="flex justify-center mx-auto">
                 <p className="text-[#E8E8E8]">
                     پیج اصلی گروه خودرویی

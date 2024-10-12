@@ -98,7 +98,7 @@ function PreRegistrationPage({data}) {
              <p className={`my-3 text-center`}>فرم پیش ثبت نام نمایندگی غلامزاده</p>
             <div className={`flex w-[370px] justify-around`}>
                 <div className="flex flex-col">
-            <input  
+            <input
                             value={name} onChange={(e) => setName(e.target.value)}
                             className={`w-[180px] ${errors.firstName ? "mb-0" : "mb-3"} text-center rounded-xl p-2 border-none outline-none bg-[#393939]`} type='text'
                             placeholder='نام '
@@ -308,6 +308,8 @@ function PreRegistrationPage({data}) {
                             <option value={"گوگل"}>گوگل </option>
                             <option value={"اینستاگرام"}>اینستاگرام </option>
                             <option value={"معرفی دوستان"}>معرفی دوستان</option>
+                            <option value={"تلگرام"}>تلگرام</option>
+                            <option value={"سایر"}>سایر</option>
            </select>
                     {
                             errors && errors.knowMySite ? (

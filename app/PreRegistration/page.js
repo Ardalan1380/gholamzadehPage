@@ -7,6 +7,8 @@ import React from 'react'
 async function PreRegistrationRoute() {
   const cookieStore = cookies();
   const token = cookieStore.get("tokenG");
+  
+  if(token) {
   const config = {
     headers: {
         'Authorization': `Bearer ${token.value}`,
@@ -14,8 +16,6 @@ async function PreRegistrationRoute() {
         'Access-Control-Allow-Origin': '*'
     }
 };
-  
-if(token) {
   const res = await axios.get(`https://api.gholamzadeh.com/api/web/carRegister/createView` , {
     headers: config.headers 
   })

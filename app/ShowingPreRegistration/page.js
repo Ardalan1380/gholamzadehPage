@@ -5,9 +5,9 @@ import { redirect } from 'next/navigation'
 import React from 'react'
 
 async function ShowingPreRegistrationRoute() {
-    const cookieStore = cookies()
-    const token = cookieStore.get("tokenG")
-    
+    const cookieStore = cookies();
+    const token = cookieStore.get("tokenG");
+
     if(token) {
         const config = {
             headers: {
@@ -19,6 +19,7 @@ async function ShowingPreRegistrationRoute() {
         const res = await axios.get('https://api.gholamzadeh.com/api/web/carRegister/show' , {
             headers:config.headers
         })
+        console.log(res)
         return (
           <ShowingResultPage data={res.data.data} />
         )

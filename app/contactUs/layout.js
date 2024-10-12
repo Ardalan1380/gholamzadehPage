@@ -4,14 +4,18 @@ import "./globalM.css";
 import { Toaster } from 'react-hot-toast';
 
 import { text  , englishText } from "@/utils/custome_fonts";
+import { ContextComponentsProvider } from "@/context/MyContextProvider";
 
 
 export default function ContactUsLayout ({children}) {
     return (
         <html lang="fa" dir="rtl">
             <body className={`${text.variable} ${englishText.variable}  `}>
-        {children}
-        <Toaster position="top-left"/>
+            <ContextComponentsProvider>
+                {children}
+            <Toaster position="top-left"/>
+                </ContextComponentsProvider>
+        
       </body>   
         </html>
     )

@@ -2,6 +2,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import { text  , englishText } from "@/utils/custome_fonts";
+import { ContextComponentsProvider } from "@/context/MyContextProvider";
 
 // const geistMono = localFont({
 //   src: "./fonts/Dalal_MRT.ttf",
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
       <body className={`${text.variable} ${englishText.variable}  `}>
+        <ContextComponentsProvider>
         {children}
+        </ContextComponentsProvider>
       </body>
     </html>
   );

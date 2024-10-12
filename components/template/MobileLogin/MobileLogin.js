@@ -4,6 +4,7 @@ import styles from "./MobileLogin.module.css"
 import Cookies from 'js-cookie';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
+import { useCardContext } from '@/context/MyContextProvider';
 
 function MobileLoginPage() {
     const router = useRouter();
@@ -31,7 +32,6 @@ function MobileLoginPage() {
             }
         })
         .catch(err => {
-            console.log(err)
             setError(err.response.data.message);
         });
     };
